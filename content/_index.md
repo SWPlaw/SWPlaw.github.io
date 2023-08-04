@@ -6,6 +6,8 @@ type: landing
 
 sections:
 
+
+
     # design:
     #   background:
     #     gradient_end: '#9A87FA'
@@ -17,6 +19,16 @@ sections:
       title: 關於本所
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
+      
+  - block: markdown
+    content:
+      # title: Gallery
+      subtitle: ''
+      text: |-
+        {{< gallery album="card" >}}
+    design:
+      columns: '1'
+
 
 
   - block: features
@@ -165,14 +177,7 @@ sections:
     #   view: showcase
     #   # For Showcase view, flip alternate rows?
     #   flip_alt_rows: false
-  # - block: markdown
-  #   content:
-  #     title: Gallery
-  #     subtitle: ''
-  #     text: |-
-  #       {{< gallery album="demo" >}}
-  #   design:
-  #     columns: '1'
+
   # - block: collection
   #   id: featured
   #   content:
